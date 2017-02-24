@@ -1,9 +1,26 @@
+// Front End Logic
 $(document).ready(function(event){
   $("#pingPong").submit(function(event){
     var userInput = parseInt($("#userInput").val());
-    $("#result").text(userInput);
+    var arrayNum = pingPong(userInput);
+    $("#result").text(arrayNum);
     event.preventDefault();
 
 
   });
 });
+
+// Business Logic
+
+function pingPong(userInput) {
+  debugger;
+  var arrayPingPong = [];
+  for (var i = 1; i < userInput + 1; i++) {
+    console.log(i);
+    arrayPingPong.push(i);
+    
+
+  }
+  return arrayPingPong;
+
+};
