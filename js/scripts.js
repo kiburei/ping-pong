@@ -13,7 +13,6 @@ $(document).ready(function(){
 // Business Logic
 
 function pingPong(userInput) {
-  debugger;
   var arrayPingPong = [];
   for (var i = 1; i < userInput + 1; i++) {
     if (i % 15 === 0) {
