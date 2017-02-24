@@ -1,5 +1,5 @@
 // Front End Logic
-$(document).ready(function(event){
+$(document).ready(function(){
   $("#pingPong").submit(function(event){
     var userInput = parseInt($("#userInput").val());
     var arrayNum = pingPong(userInput);
@@ -16,9 +16,17 @@ function pingPong(userInput) {
   debugger;
   var arrayPingPong = [];
   for (var i = 1; i < userInput + 1; i++) {
-    console.log(i);
-    arrayPingPong.push(i);
-    
+    if (i % 3 === 0) {
+      arrayPingPong.push("ping");
+
+    } else if (i % 5 === 0) {
+      arrayPingPong.push("pong");
+
+    } else if (i % 15 === 0) {
+      arrayPingPong.push("pingpong");
+    } else {
+      arrayPingPong.push(i);
+    }
 
   }
   return arrayPingPong;
