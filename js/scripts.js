@@ -16,14 +16,14 @@ function pingPong(userInput) {
   debugger;
   var arrayPingPong = [];
   for (var i = 1; i < userInput + 1; i++) {
-    if (i % 3 === 0) {
-      arrayPingPong.push("ping");
+    if (i % 15 === 0) {
+      arrayPingPong.push("pingpong");
 
     } else if (i % 5 === 0) {
       arrayPingPong.push("pong");
 
-    } else if (i % 15 === 0) {
-      arrayPingPong.push("pingpong");
+    }else if (i % 3 === 0) {
+      arrayPingPong.push("ping");
     } else {
       arrayPingPong.push(i);
     }
