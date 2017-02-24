@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/scripts.css">
-    <link rel="stylesheet" href="css/bootstrap/css/bootrsap.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Ping Pong</title>
   </head>
-  <h1>Ping Pong</h1>
   <body>
-    <h2>Lets Play a Game</h2>
-    <h3>About Ping Pong</h3>
-    <p>You take a number, any number. Loop through 0 to that number, say X. Replace all numbers divisible by 3 with <strong>Ping</strong>
-    , numbers divisible by 5 with <strong>Pong</strong> and thos divisible by 15 with <strong>Ping Pong</strong></p>
-
-    <p>Lets see how fun this is going to be</p>
-
-    <p>PLAY</p>
-    <form id="pingPong" action="index.html" method="post">
-      <input id="userInput" type="text" name="" value="" placeholder="Enter Number Here">
-      <button name="button">Ping Pong!</button>
-
-    </form>
-
-    <div id="result">
+    <div class="top">
+      <h1>Ping Pong</h1>
 
     </div>
+    
+    <div class="container">
+      <h2>Lets Play a Game</h2>
+      <div class="about">
+        <h3>About Ping Pong</h3>
+        Author: Andrew Wachira </br>
+        Github: https://github.com/kiburei </br>
+        Version: 1.0 </br>
 
+
+      </div>
+      <div class="rules">
+        <h3>Rules</h3>
+        <p>You take a number, any number. Loop through 0 to that number, say X. Replace all numbers divisible by 3 with <strong>Ping</strong>
+        , numbers divisible by 5 with <strong>Pong</strong> and thos divisible by 15 with <strong>Ping Pong</strong></p>
+
+        <p>Lets see how fun this is going to be</p>
+
+
+
+      </div>
+      <form id="pingPong" action="index.html" method="post">
+        <div class="input">
+          <input class="form-control" id="userInput" type="text" placeholder="Enter Number Here"></br>
+          <button class="btn btn-success" name="button">Ping Pong!</button>
+
+        </div>
+
+      </form>
+
+      <div id="result">
+
+      </div>
+
+    </div>
   </body>
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </html>

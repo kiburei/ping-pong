@@ -1,0 +1,50 @@
+.top {
+  font-weight: lighter;
+  font-family: monospace;
+
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+body {
+  background-image: url(../images/ping1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-resolution: from-image;
+  color: white;
+  margin: 100px;
+  font-size: 15px;
+  font-family: monospace;
+  text-align: center;
+  }
+
+.container {
+  box-shadow: 1px 2px 3px 4px;
+}
+
+#result {
+  margin: 20px
+
+}
+
+.input {
+  text-align: center;
+  padding-left: 400px;
+  padding-right: 500px
+}
+
+.about {
+  width: 400px;
+  float: left;
+  text-align: left;
+
+}
+
+.rules {
+  width: 400px;
+  float: right;
+  text-align: left;
+}
